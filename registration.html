@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.00"/>
+        <title>Registration</title>
+        <link href="styles.css" rel="stylesheet"/>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html" style="margin-right: 100px;" ><img src="insurance.png" width="40px" height="40px" ><span> </span> <span> </span>Pds Insurance</a>
+            <a href="login.html" >Login</a>
+            <a href="#company" >About us</a>
+            <a href="#contact" >Contact us</a>
+        </div>
+       <div class="middle">
+        <div class="container">
+            <div class="title">Registration</div>
+            <form action="#" method="post" id="registerForm">
+                <div class="customer-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" name="name" placeholder="Enter your Name" required/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" name="email" placeholder="Enter your Email" required/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone no</span>
+                        <input type="number" name="number" minlength="10" maxlength="10" pattern="[0-9]{10}" placeholder="Enter your Name" required/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Nomine</span>
+                        <input type="text"name="nominee" placeholder="Enter your Name" required/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Relation</span>
+                        <select name="relation" name="relation" id="relation" required></select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Country</span>
+                        <select name="country" name="country" id="country" onchange="updateStateOptions();" required></select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">State</span>
+                        <select name="state" name="state" id="state"  required></select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input type="text" name="address" name="address" placeholder="Enter your Address" required></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" name="password" placeholder="Enter your Password" required/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" name="confirm" placeholder="Confirm Your Password" required/>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" required/>
+                        <label>Accept our terms and conditions</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="reset"  value="Reset" style="font-weight: 400; background:linear-gradient(135deg,#2588cb,#9b59b6)"/>
+                    </div>
+                    <div class="input-box">
+                       
+                        <input type="submit"  value="Register" style="font-weight: 400; background:linear-gradient(135deg,#2588cb,#9b59b6)"/>
+                    </div>
+                    
+                </div>
+            </form>
+            <div class="footer">Already have an account? login <a href="login.html">here</a></div>
+        </div>
+       </div>
+       <div class="bottom">
+        <hr>
+        <div class="child left" id="company">
+            <ul>
+                <li><h4>Company</h4></li>
+                <li>Privacy Policy</li>
+                <li>Terms and conditions</li>
+            </ul>
+        </div>
+        <div class="child right" id="contact">
+            <ul>
+                <li><h4>Contact</h4></li>
+                <li>support@insurance.co</li>
+                <li>+91 1234567890</li>
+                <li>no.1728, 24th floor, abc street</li>
+                <li>White Field, Karnataka</li>
+            </ul>
+        </div>
+       </div>
+    </body>
+</html>

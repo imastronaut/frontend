@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+
+body .navbar{
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+     
+     text-align: right;
+     align-items: center;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+ 
+ body .navbar a{
+     padding: 8px;
+     font-size: 18px;
+     text-decoration: none;
+ }
+ 
+
+
+body .middle{
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container{
+    max-width: 400px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    border-inline: 1px solid rgb(139, 119, 139);
+}
+
+
+.container .title{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.customer-details .checkbox-item{
+    width: 100%;
+    margin: 10px;
+}
+
+.customer-details .input-box{
+    margin: 5px;
+}
+
+.customer-details .input-box span{
+    font-weight: 450;
+    margin-bottom: 5px;
+}
+
+.customer-details .input-box input{
+    width:100%;
+    height:40px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px black;
+    padding: 15px;
+}
+
+.customer-details .input-box button{
+    margin-top: 10px;
+    width:100%;
+    height:40px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px black;
+    font-weight: 500;
+}
+
+.customer-details .input-box select{
+    margin-top: 10px;
+    width:100%;
+    height:40px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px black;
+    font-weight: 500;
+}
+
+.customer-details .details{
+    justify-content: space-between;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.customer-details .details .half{
+    width: (100% /2 - 20px);
+   
+}
+
+.bottom{
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    position:absolute;
+    padding: 15px;
+}
+
+.bottom .child{
+    width: calc(100% / 2 - 20px);
+}
+
+ul{
+    list-style: none;
+}
+
+#company{
+    padding-top: 20px;
+    text-align: center;
+}
+
+#contact{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.customer-details .buttons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+    margin-top: 10px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.customer-details .buttons .button-div{
+    width: calc(100% / 2 - 20px);
+
+}
+
+.customer-details .buttons .button-div button{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+@media (max-width:600px){
+    .customer-details .buttons .button-div{
+        width: 100%;
+    }
+}
+
+/* a{
+    text-decoration: none;
+} */
+
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+.table{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   
+
+}
+
+.navigation{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.navigation button{
+    margin: 10px;
+    text-align: center;
+    width: 45px;
+    height: 40px;
+    border-radius: 4px;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+
+
+th,td{
+    padding: 10px;
+}
+

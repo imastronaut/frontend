@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="styles1.css" rel="stylesheet"/>
+    <script defer src="changePolicy.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" style="margin-right: 100px;" ><img src="insurance.png" width="40px" height="40px" ><span> </span> <span> </span>Pds Insurance</a>
+        <a href="login.html" >Login</a>
+        <a href="" >About us</a>
+        <a href="" >Contact us</a>
+    </div>
+    <div class="middle">
+        <div class="container">
+            <div class="title">Choose Your Policy</div>
+            <form action="#" method="post">
+                <div class="customer-details">
+                    <div class="input-box">
+                        <span class="details">Policy Type</span>
+                        <select name="policyType" id="policyType" onchange="updatePolicyTitleTag();" required>
+                            <option value="">Choose Your Policy Type</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Policy Title</span>
+                        <select name="policyTitle" id="policyTitle" required>
+                            <option value="">Choose your Policy Title</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Sum Assured(rs)</span>
+                        <input type="number" name="sumAssured" placeholder="Sum Assured" required/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Premium Ammount(rs)</span>
+                        <input type="number" name="sumAssured" placeholder="Premium Amount" required/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Policy Term(yrs)</span>
+                        <input type="number" name="policyTerm" placeholder="Policy Term" required/>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="button-div">
+                            <button type="submit" value="Confirm" style="background:linear-gradient(135deg,#2588cb,#9b59b6)">Confirm</button>
+                        </div>
+                        <div class="button-div">
+                            <button style="font-weight: 400; background:linear-gradient(135deg,#2588cb,#9b59b6)"><a href="viewPolicy.html">View Your Policies</a></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="footer">don't have an account yet? register <a href="registration.html">here</a></div>
+        </div>
+    </div>
+    <hr style="color:#bb6bdb">
+    <div class="bottom">
+        <div class="child left" id="company">
+            <ul>
+                <li><h4>Company</h4></li>
+                <li>Privacy Policy</li>
+                <li>Terms and conditions</li>
+            </ul>
+        </div>
+        <div class="child right" id="contact">
+            <ul>
+                <li><h4>Contact</h4></li>
+                <li>support@insurance.co</li>
+                <li>+91 1234567890</li>
+                <li>no.1728, 24th floor, abc street</li>
+                <li>White Field, Karnataka</li>
+            </ul>
+        </div>
+       </div>
+</body>
+</html>
